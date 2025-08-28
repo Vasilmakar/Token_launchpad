@@ -1,0 +1,20 @@
+#seeds = false
+skip-lint = false
+[programs.localnet]
+token_launchpad = "AcRe6mmG9TLciJfNVkxuSwnHGcex13KwaMdoCP9gYvba"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/home/vasilm/.config/solana/id.json"
+url = "http://127.0.0.1:8899"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+cluster = "localnet"
+startup_wait = 10000
+# cluster = "http:/
